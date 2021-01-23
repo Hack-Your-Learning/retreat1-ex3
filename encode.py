@@ -22,7 +22,7 @@ def encode_test():
     print("Enter a secret to help encode your message:")
     secret = input()
     encoded_message = encode(message, secret)
-
+    print("Encoded message: \n" + encoded_message)
 
 # If the user has decided to decode a message
 def decode_test():
@@ -31,7 +31,7 @@ def decode_test():
     print("Enter a secret to help decode your message:")
     secret = input()
     decoded_message = decode(message, secret)
-
+    print("Decoded message: \n" + decoded_message)
 
 # Perform a set of encoding operations
 # You may customize which set of operations you encode with

@@ -1,14 +1,12 @@
 <div>
 <img src="http://drive.google.com/uc?export=view&id=1MADw5CwZYysojTdKwgfJEJpAHdO1Jxoq">
-<h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Space Mono', sans-serif;">Hack Your Learning: Session 1 - Part 1
+<h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Space Mono', sans-serif;">Hack your Learning: Session 1 - Part 3
 </h1>
 </div>
 
-# Hack your Learning: Session 1 - Part 3
-
 The purpose of the exercises in this section is to broaden your knowledge of `git` commands that have the power to rewrite history. Specifically, you will learn about `git rebase` and how interactive rebasing can be used to Amend, Reword, Delete, Reorder, Squash and Split commits.
 
-To learn about these abilities, you will watch 2 short YouTube videos. Then, you will practice using the git commands using branches and commits that have been pre-created for you. Exercises 1-9 are individual exercises and does not require teamwork to complete, but we encourage you to work in teams to share knowledge and help each other. If you have time, exercise 10 should be done in a team!
+To learn about these abilities, you will watch 2 short YouTube videos. Then, you will practice using the git commands with branches & commits that have been pre-created for you. Exercises 1-9 are individual exercises and do not require teamwork to complete. However, we encourage you to work in teams to share knowledge and help each other. If you have time, exercise 10 should be done in a team!
 
 ### The Problem
 
@@ -31,9 +29,18 @@ To learn about rebasing and what makes it different than merging, read the follo
 Then, watch the following video to reinforce your learning:
 https://www.youtube.com/watch?v=f1wnYdLEpgI
 
-One important caveat to remember with rebase is that it rewrites history (deletes and recreates commits). Therefore, it can be very dangerous to use when other people may already be working with or on the commits you are rebasing. Rebasing and rewriting history can be a very handy tool when you are working on your local branches, but be very careful if you ever do this with branches and commits that are on a remote repository where you are collaborating with other people.
+One important caveat to remember with rebase is that it rewrites history (deletes and recreates commits). Therefore, it can be very dangerous to use when other people may already be working with the commits you are rebasing. Rebasing and rewriting history can be a very handy tool when you are working on your local branches, but be very careful if you ever do this with branches and commits that are on a remote repository where you are collaborating with other people.
 
 With that being said, in the following exercises you will be rebasing and rewriting history that exists on your forked remote repository for the sake of convenience and learning.
+
+### Refresher on branches
+
+Whenever you need to access a branch for the first time on your local repository, follow these directions:
+1. Use `git branch branchNameHere` to create the branch in your local repository
+2. Use `git checkout branchNameHere` to switch to it
+3. Finally, use `git pull origin branchNameHere` to sync with the commits for that branch from the origin repository. 
+
+After you have completed these steps, you may switch between branches using `git checkout`. Remember: branches from the remote repository will not exist on your local repository unless you manually follow the above steps to add them!
 
 ## Exercise 1: Rebase (Easy)
 
@@ -105,10 +112,12 @@ Split the commit `Decode Vigenere and Add Art` into 2 separate commits: `Decode 
 
 Using your new knowledge of rebasing and your previous knowledge of merging, adopt the strategy of your choice to combine the features of `shuffle` and `Vigenere` into one branch (preferably main). You should not copy and paste anything.
 
-Once it's all together, you can make changes to combine different methods of encoding and decoding your message. Encode a message for your friends and see if they can decode it given the secret and your order of operations! Note: be careful encoding messages with spaces, as you may not notice the extra whitespace between letters or at the end of your printed encode result. 
+Once it's all together, you can make changes to combine different methods of encoding and decoding your message. Encode a message for your friends and see if they can decode it given the secret and your order of operations! Note: be careful encoding messages that contain spaces, as you may not notice extra whitespace in the printed result.
 
 As a bonus, try decoding this message: `slPmuzUOvvYaijePwyYhUmsRwkGctew`. It was encoded using caesar, then shuffle, then vigenere, using the secret `hackYourLearning!`. 
 
 ## Exercise 10: Collaborate
 
-Can you think of a new way to encode and decode a message? Pair up with a partner and decide whose repository you will work on. Create a new branch for your crypto method, and have them create a branch for a different crypto message, and when you've completed your implementations try putting them together using `git rebase` and/or `git merge`.  
+Can you think of a new way to encode and decode a message? Pair up with a partner and decide whose repository you will work on. Create a new branch for your crypto method, and have them create a branch for a different crypto message, and when you've completed your implementations try putting them together using `git rebase` and/or `git merge`. Test out your new encryption methods to see if they work!
+
+Congrats, you've completed all the challenges! Thanks for participating in this Hack Your Learning prep session- follow our social media to stay up to date with upcoming events!
