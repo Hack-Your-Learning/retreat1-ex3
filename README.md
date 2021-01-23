@@ -33,15 +33,6 @@ One important caveat to remember with rebase is that it rewrites history (delete
 
 With that being said, in the following exercises you will be rebasing and rewriting history that exists on your forked remote repository for the sake of convenience and learning.
 
-### Refresher on branches
-
-Whenever you need to access a branch for the first time on your local repository, follow these directions:
-1. Use `git branch branchNameHere` to create the branch in your local repository
-2. Use `git checkout branchNameHere` to switch to it
-3. Finally, use `git pull origin branchNameHere` to sync with the commits for that branch from the origin repository. 
-
-After you have completed these steps, you may switch between branches using `git checkout`. Remember: branches from the remote repository will not exist on your local repository unless you manually follow the above steps to add them!
-
 ## Exercise 1: Rebase (Easy)
 
 Using your knowledge from above, you will rebase the caesarfeat branch on to the caesar branch.
